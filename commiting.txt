@@ -1,0 +1,48 @@
+Предположим, что вы отредактировали три файла (a.html, b.html, и c.html). 
+Теперь вы хотите закоммитить все изменения, при этом чтобы изменения в a.html и b.html 
+были одним коммитом, в то время как изменения в c.html логически не связаны 
+с первыми двумя файлами и должны идти отдельным коммитом.
+
+В теории, вы можете сделать следующее:
+
+git add a.html
+git add b.html
+git commit -m "Changes for a and b"
+git add c.html
+git commit -m "Unrelated change to c"
+
+cd /d Z:\githowto\files\03\work
+
+
+git commit vscode
+git commit -m online
+
+
+
+git log
+
+
+
+git log --pretty=oneline
+
+
+git log --oneline --max-count=2
+git log --oneline --since="5 minutes ago"
+git log --oneline --until="5 minutes ago"
+git log --oneline --author="Your Name"
+git log --oneline --all
+git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+
+--pretty="..." — определяет формат вывода.
+%h — укороченный хеш коммита.
+%ad — дата коммита.
+| — просто визуальный разделитель.
+%s — комментарий.
+%d — дополнения коммита («головы» веток или теги).
+%an — имя автора.
+--date=short — сохраняет формат даты коротким и симпатичным.
+
+
+git tag Вы можете увидеть, какие теги доступны, используя команду git tag.
+
+git log main --all Вы также можете посмотреть теги в логе.
