@@ -46,3 +46,15 @@ git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
 git tag Вы можете увидеть, какие теги доступны, используя команду git tag.
 
 git log main --all Вы также можете посмотреть теги в логе.
+
+
+
+
+
+git add .
+git commit -m "Initial commit"
+
+git branch -M main
+git push -u origin main
+
+
